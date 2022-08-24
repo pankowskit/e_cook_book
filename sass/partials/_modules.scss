@@ -1,7 +1,79 @@
 @include aoa-bg-series($section__classes,$section__images);
 
+.about{
+    &-s4{
+        background-color: #666!important;
+        background-blend-mode: multiply;
+    }
+}
 .comingsoon,.error,.privacy{
     &-s1{
         background-blend-mode: multiply;
+    }
+}
+.contact{
+    &-s3{
+        background-color: #666!important;
+        background-blend-mode: multiply;
+    }
+}
+.faq{
+    &-s3{
+        background-color: #666!important;
+        background-blend-mode: multiply;
+    }
+}
+.index{
+    &-s1{
+        background-position: right!important;
+    }
+}
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
+header{
+    z-index: 100;
+}
+@media all and (max-width: 767px){
+    .about{
+        &-s1,&-s2,&-s3{
+            background-color: #666!important;
+            background-blend-mode: multiply;
+        }
+    }
+    .contact{
+        &-s1,&-s2{
+            background-color: #666!important;
+            background-blend-mode: multiply;
+        }
+        &-s1{
+            background-position: right!important;
+        }
+    }
+    .index{
+        &-s1{
+            *{
+                color: #fff !important;
+            }
+            background-color: #666!important;
+            background-blend-mode: multiply;
+            background-position: left!important;
+        }
+    }
+    .navbar{
+        &-nav{
+            background-color: #666;
+            border: 1px solid #333;
+            opacity: 0.9;
+            padding: 10px;
+        }
+    }
+    .recipes,.faq{
+        &-s1{
+            background-color: #666!important;
+            background-blend-mode: multiply;
+        }
     }
 }
